@@ -110,7 +110,7 @@ describe('Game class', () => {
         let result = game.playersGuessSubmission(42);
         expect(typeof result).toBe('string');
       });
-      it('returns "You Win!" if playersGuess equals winningGuess', () => {
+      it('returns "You Win!" if playersGuess equals winningNumber', () => {
         game.winningNumber = 42;
         expect(game.playersGuessSubmission(42)).toBe('You Win!');
       });
